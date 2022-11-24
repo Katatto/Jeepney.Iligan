@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Nav Style */
+#map{
+  width:100%; 
+  height:650px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 128, 98);
+  font-family: Sans serif;
+  color: white;
+  width: 100%;
+}
+/* look for better font*/
+.logo {
+  width: 70px;
+  height: auto;
+  margin-left: 40px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+} 
+.logo a {  color: white;
+}
+
+ul { 
+  margin-right: 5px;
+  padding: 0;
+  display: flex;
+  text-transform: uppercase;
+  
+} 
+
+li {
+  list-style: none;
+ }
+ 
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  }
+
+li a:hover {
+  background-color: rgb(98, 210, 176);
+  text-decoration: underline;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins';
+  background-color: #e2e2e2;
+  color: rgb(2, 2, 2);
+  line-height: 1.8;
+}
+
+a{
+  text-decoration: none;
+}
+
+#container{
+  margin: 30px auto;
+  max-width: 430px;
+  padding: 20px;
+}
+
+.form-wrap{
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #333;
+  border-top: 4px solid #9ce1f2;
+  border-radius: 05px;
+}
+
+.form-wrap h1,
+.form-wrap p{
+  text-align: center;
+}
+
+.form-wrap .form-group{
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label{
+  display: block;
+  color: #666;
+}
+
+.form-wrap .form-group input{
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.form-wrap button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #9ce1f2;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #9ce1f2;
+  font-family: 'poppins';
+  font-size: 15px;
+  transition: 1s;
+}
+
+.form-wrap button:hover{
+  background-color: #9ce1f2;
+  transition: 1s;
+}
+
+.form-wrap .bottom-text{
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+footer a {
+  color:#0d9ac1;
+}
+
+/*menu css */
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(30, 128, 98);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.menu img{
+  position: relative;
+  display: flex;
+  left: 20%;
+  width: 50%;
+}
+
+.menu input{
+  padding: 3%;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.menu a:hover {
+  color: #000000;
+}
+.move .span{
+  font-size:30px;
+  cursor:pointer;
+}
+
+.menu .c-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#move {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .menu {padding-top: 15px;}
+  .menu a {font-size: 18px;}
+}
+
+#map{
+  width:100%; 
+  height:800px;
+}
