@@ -18,6 +18,8 @@ $user_data = check_login($con);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/emergency.css">
+
 
   <!-- Bootstrap CSS -->
   <link href="    https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,12 +44,13 @@ $user_data = check_login($con);
             <li><a 	href="logout.php" target="_parent">logout</a></li>
         </ul>
    </nav>
-   
+   <?php include('message.php'); ?>
+
    <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h4>Commuters Details
+                <h4>Emergency Contacts Details
                     <a href="emergency-add.php" class="btn btn-primary float-end">Add Emergency Contact</a>
                 </h4>
             </div>

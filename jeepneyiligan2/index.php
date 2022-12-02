@@ -29,8 +29,6 @@ $user_data = check_login($con);
         </div>
         
         <ul>
-        <li><a 	href="test.php" target="_parent">test</a></li>
-
             <li><a 	href="index.php" target="_parent">Home </a></li>
             <li><a 	href="emergency.php" target="_parent">Emergency </a></li>
             <li><a 	href="Profile.php" target="_parent"><?php echo $user_data['fname']; ?> </a></li>
@@ -46,15 +44,16 @@ $user_data = check_login($con);
             <input type="text" name="destination" placeholder="Destination">
             
 
-        </div>
+            </div>
+
         <div id="move">
           <span style="cursor:pointer" onclick="openMenu()">&#9776; </span> 
          <!-- <h2>Jeepney.Ilgn</h2>
             <p>Map view here</p> -->
 
-        </div>
 
-          <div id ="map" class = "map"> </div>
+        </div>
+            <div id ="map" class = "map"> </div>
           <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
 	        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>    
 

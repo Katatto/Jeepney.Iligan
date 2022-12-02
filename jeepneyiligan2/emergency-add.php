@@ -15,18 +15,18 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         $email = $_POST['email'];
         $phone = $_POST['contact_number'];
      //save to database
-        $query = "INSERT INTO emergency_contact ( user_id, NAME, contact_number, email) VALUES ('$commuters_id','$name','$phone', '$email')";
+        $query = "INSERT INTO emergency_contact ( user_id, NAME, contact_number, email) VALUES ('$commuters_id','$name','$phone', '$email') limit 3";
   
         $query_run = mysqli_query($con, $query);
         if($query_run)
         {
-            $_SESSION['message'] = "Student Created Successfully";
+            $_SESSION['message'] = " Created Successfully";
             header("Location: emergency.php");
             exit(0);
         }
         else
         {
-            $_SESSION['message'] = "Student Not Created";
+            $_SESSION['message'] = " Not Created";
             header("Location: emergency.php");
             exit(0);
         }

@@ -18,7 +18,7 @@
            {
 
             // make sure the password meets the min strength requirements
-              if ( strlen($password) >= 5 && strpbrk($password, "!#$.,:;()") != false )
+              if ( strlen($password) >= 8 && strpbrk($password, "!#$.,:;()") != false )
               {
                 
                  //save to database
@@ -65,7 +65,9 @@
                 <h6>Already have an account?</h6>
                 <a href="login.php" class="toggle">Sign in</a>
               </div>
-
+              <p style = "color: red";>
+              <?php echo $message ?>
+            </p>
               <div class="actual-form">
                 <div class="input-wrap">
                   <input

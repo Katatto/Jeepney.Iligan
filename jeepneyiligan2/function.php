@@ -1,5 +1,5 @@
 <?php
-
+$message ="";
 include("dbcon.php");
 
 function check_login($con)
@@ -79,7 +79,7 @@ if(isset($_POST['update_commuters']))
     }
     else
     {
-        $_SESSION['message'] = "Commuters Not Updated";
+        $_SESSION['message'] = "Not Updated";
         header("Location: emergency.php");
         exit(0);
     }
@@ -96,13 +96,13 @@ if(isset($_POST['delete_emergency']))
 
     if($query_run)
     {
-        $_SESSION['message'] = "User Deleted Successfully";
+        $_SESSION['message'] = "Deleted Successfully";
         header("Location: emergency.php");
         exit(0);
     }
     else
     {
-        $_SESSION['message'] = "Student Not Deleted";
+        $_SESSION['message'] = "Not Deleted";
         header("Location: index.php");
         exit(0);
     }

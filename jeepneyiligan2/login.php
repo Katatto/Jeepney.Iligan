@@ -1,6 +1,6 @@
 <?php
 
-$message ="";
+
 session_start();
 
 include("dbcon.php");
@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                 <div class="input-wrap">
                   <input
                     type="text" name = "email" class="input-field" autocomplete="off" required  />
-                  <label>Username</label>
+                  <label>Email</label>
                 </div>
 
                 <div class="input-wrap">

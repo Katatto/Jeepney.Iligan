@@ -69,6 +69,9 @@ $user_data = check_login($con);
           <i class = "fa fa-check"></i>
         </div>
       </div>
+      <div class="d-flex flex-column align-items-center text-center >
+      <span class=class="col-md-12"><?php echo $user_data['fname']; ?></span>
+            <span class="text-black-50"><?php echo $user_data['email']; ?></span></div>
     </form>
             <!-- <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="./img/profile_pic.jpg">
             <span class="font-weight-bold"><?php echo $user_data['fname']; ?></span>

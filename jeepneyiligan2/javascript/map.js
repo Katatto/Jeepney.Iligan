@@ -50,3 +50,4 @@
     
            console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
         }
+    
